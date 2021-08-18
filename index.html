@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ed933c8855.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Веб-разработчик</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                Никита Капурин
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li><a href="secret/index.html">Секреты</a></li>
-                    <li>Контакты</li>
-                </ul>
+            <div class="container-nav">
+                <div class="logo">
+                    Никита Капурин
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>Обо мне</li>
+                        <li>Услуги</li>
+                        <li>Кейсы</li>
+                        <li>Прайс</li>
+                        <li><a href="secret/index.html">Секреты</a></li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -33,195 +38,230 @@
             <input type="submit" value="Мои работы">
         </div>
     </div>
+    
+    <section class="about">
+        <div class="container">
 
-    <div class="about">
+            <h2 class="title">Обо мне</h2>
+            <hr class="line">
+            <div class="about_img">
+                <img src="img/img-2.png" alt="">
+            </div>
 
-        <h2 class="title">Обо мне</h2>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                    facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
 
-        <div class="about_img">
-            <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                    facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            </div>
+            <p class="btn-fix">
+                <a href="#" class="btn">Скачать резюме</a>
+            </p>
         </div>
+    </section>
 
-        <div class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-                facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-                facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-        </div>
-
-        <input type="submit" value="Скачать резюме">
-    </div>
-
-    <div class="skills">
+    <section class="skills">
         <h2 class="title">Что я умею</h2>
+        <hr class="line">
 
         <div class="container">
+            <div class="skills_container">
             <div class="skills_item">
-                <img src="" alt="">
-                <h5>Веб дизайн</h5>
+                <img src="img/icon-2.png" alt="" class="skills_img">
+                <h5>Веб-дизайн</h5>
                 <p>Lorem ipsum dolor sit amet placerat
                     facilisis felis mi in tempus eleifend
                     pellentesque natoque etiam. </p>
             </div>
 
             <div class="skills_item">
-                <img src="" alt="">
-                <h5>Веб дизайн</h5>
+                <img src="img/icon-3.png" alt="" class="skills_img">
+                <h5>Разработка</h5>
                 <p>Lorem ipsum dolor sit amet placerat
                     facilisis felis mi in tempus eleifend
                     pellentesque natoque etiam. </p>
             </div>
 
             <div class="skills_item">
-                <img src="" alt="">
-                <h5>Веб дизайн</h5>
+                <img src="img/icon-4.png" alt="" class="skills_img">
+                <h5>CEO-Оптимизация</h5>
                 <p>Lorem ipsum dolor sit amet placerat
                     facilisis felis mi in tempus eleifend
                     pellentesque natoque etiam. </p>
             </div>
 
             <div class="skills_item">
-                <img src="" alt="">
-                <h5>Веб дизайн</h5>
+                <img src="img/icon-5.png" alt="" class="skills_img">
+                <h5>Маркетинг</h5>
                 <p>Lorem ipsum dolor sit amet placerat
                     facilisis felis mi in tempus eleifend
                     pellentesque natoque etiam. </p>
             </div>
         </div>
-    </div>
+        </div>
+    </section>
 
-    <div class="cases">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+    <section class="cases">
+        <h2 class="title">Кейсы</h2>
+        <hr class="line">
 
-        <img src="" alt="">
+        <div class="container">
+        <p class="cases-description-head"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+
+        <img src="img/cases.png" alt="">
 
         <div class="cases_descriptiption">
             <div class="cases_des_left">
-                <h4>Client:</h4>
-                <p>Какая-то компания</p>
-                <h4>Client:</h4>
-                <p>Какая-то компания</p>
+                <h4 class="cases-title">Client:</h4>
+                <p class="cases-text">Какая-то компания</p>
+                <h4 class="cases-title">Website:</h4>
+                <p class="cases-text">http://www.somedomain.com</p>
             </div>
             <div class="cases_des_right">
-                <h4>Название проекта</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
+                <h4 class="cases-title">Название проекта</h4>
+                <p class="cases-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
-            <input type="submit" value="Visit Live Site">
+            
         </div>
+        <a href="#" class="cases_btn">Visit Live Site</a>
+        
+        <div class="price">
+            <h2 class="title margin">Расчет стоимости</h2>
+            <form action="#" class="price_form">
+                <label class="price_name">Тип сайта</label>
+                <select name="type" id="" class="price_select">
+                    <option>Выберите пункт...</option>
+                    <option value="1">Визитка</option>
+                    <option value="1">Интернет магазин</option>
+                    <option value="1">Блог</option>
+                </select>
 
-        <h2>Расчет стоимости</h2>
-        <form action="#">
-            <label>Тип сайта</label>
-            <select name="type" id="">
-                <option value="1">Визитка</option>
-                <option value="1">Интернет магазин</option>
-                <option value="1">Блог</option>
-            </select>
+                <label class="price_name">Дизайн</label>
+                <select name="disigne" id="" class="price_select">
+                    <option>Выберите пункт...</option>
+                    <option value="1">Простой</option>
+                    <option value="1">Сложный</option>
+                    <option value="1">Нереальный</option>
+                </select>
 
-            <label>Дизайн</label>
-            <select name="disigne" id="" >
-                <option value="1">Простой</option>
-                <option value="1">Сложный</option>
-                <option value="1">Нереальный</option>
-            </select>
-
-            <label>Адаптивность</label>
-            <select name="adaptiv" id="" >
-                <option value="1">Статичный</option>
-                <option value="1">Адаптивный</option>
-            </select>
-        </form>
-        <hr>
-        <p>Сроки</p>
-        <p>0</p>
-        <p>Стоимость</p>
-        <p>0</p>
+                <label class="price_name">Адаптивность</label>
+                <select name="adaptiv" id="" class="price_select">
+                    <option>Выберите пункт...</option>
+                    <option value="1">Статичный</option>
+                    <option value="1">Адаптивный</option>
+                </select>
+            </form>
+            <div class="price_count">
+                <p>Сроки</p>
+                <p>0</p>
+            </div>
+            <div class="price_count">
+                <p>Стоимость</p>
+                <p>0</p>
+            </div>
+        </div>
     </div>
+    </section>
 
-    <div class="statistic">
+
+    <section class="statistic">
         <h2 class="title">Немного статистики</h2>
+        <hr class="line">
 
         <div class="container">
-            <div class="statistic_item">
-                <img src="" alt="">
-                <h5>120</h5>
-                <p>Счастливых клиентов</p>
-            </div>
+            <div class="statis_container">
+                <div class="statistic_item">
+                    <img src="img/statis-icon-1.png" alt="" class="statis_img">
+                    <h5 class="statis_title">120</h5>
+                    <p class="statis_text">Счастливых клиентов</p>
+                </div>
 
-            <div class="statistic_item">
-                <img src="" alt="">
-                <h5>4,600</h5>
-                <p>Часов работы</p>
-            </div>
+                <div class="statistic_item">
+                    <img src="img/statis-icon-2.png" alt="" class="statis_img">
+                    <h5 class="statis_title">4,600</h5>
+                    <p class="statis_text">Часов работы</p>
+                </div>
 
-            <div class="statistic_item">
-                <img src="" alt="">
-                <h5>340</h5>
-                <p>Проектов завершено</p>
-            </div>
+                <div class="statistic_item">
+                    <img src="img/statis-icon-3.png" alt="" class="statis_img">
+                    <h5 class="statis_title">340</h5>
+                    <p class="statis_text">Проектов завершено</p>
+                </div>
 
-            <div class="statistic_item">
-                <img src="" alt="">
-                <h5>23</h5>
-                <p>Наград получено</p>
+                <div class="statistic_item">
+                    <img src="img/statis-icon-4.png" alt="" class="statis_img">
+                    <h5 class="statis_title">23</h5>
+                    <p class="statis_text">Наград получено</p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section class="comment">
+        <div class="container">
+        <h2 class="title">Отзывы</h2>
+    
+        <hr class="line line_fix">
     </div>
 
-    <div class="comment">
-        <h2 class="title">Отзывы</h2>
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+        <img src="img/comment-img.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante<br>
             facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
 
         <p><b>Михаил,</b>Ген директор ПАО"Газпром".</p>
-    </div>
 
-    <div class="contacts">
-        <h2 class="title">Мои контакты</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
+    </section>
 
-        <div class="contacts_item_main">
-            <div class="contacts_item">
-                <img src="" alt="">
-                <p>Санкт-Петербург <br>
-                    Невский проспект 11</p>
+    <section class="contacts">
+        <h2 class="title title_white">Мои контакты</h2>
+        <hr class="line">
+        <div class="container-form">
+            <p class="contacts_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
+
+            <div class="contacts_item_main">
+                <div class="contacts_item">
+                    <img src="img/contact-icon-1.png" alt="">
+                    <p>Санкт-Петербург <br>
+                        Невский проспект 11</p>
+                </div>
+                <div class="contacts_item">
+                    <img src="img/contact-icon-2.png" alt="">
+                    <p>info@companyname.com</p>
+                </div>
+                <div class="contacts_item">
+                    <img src="img/contact-icon-3.png" alt="">
+                    <p>+7 999 999 99 99</p>
+                </div>
             </div>
-            <div class="contacts_item">
-                <img src="" alt="">
-                <p>info@companyname.com</p>
+
+            <div class="contacts_form">
+                <h3 class="contacts_form_title">Оставье мне сообщение</h3>
+                <form action="#">
+                    <div class="contacts_form-container">
+                        <input type="text" placeholder="Имя" class="contacts_form_item">
+                        <input type="email" placeholder="Email" class="contacts_form_item">
+                    </div>
+                    <textarea name="name" id="1" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                    <input type="submit" value="Отправить" class="form-btn">
+                </form>
             </div>
-            <div class="contacts_item">
-                <img src="" alt="">
-                <p>+7 999 999 99 99</p>
+            <div class="contacts_icon_container">
+                <i class="fab fa-facebook-f contacts_icon"></i>
+                <i class="fab fa-twitter contacts_icon"></i>
+                <i class="fab fa-vk contacts_icon"></i>
+                <i class="fab fa-github contacts_icon"></i>
+                <i class="fab fa-instagram-square contacts_icon"></i>
+                <i class="fab fa-linkedin contacts_icon"></i>
             </div>
         </div>
+    </section>
 
-        <div class="contacts_form">
-            <h3>Оставье мне сообщение</h3>
-            <form action="#">
-                <input type="text" placeholder="Имя">
-                <input type="email" placeholder="Email">
-                <textarea name="name" id="1" cols="30" rows="10"></textarea>
-                <input type="submit" value="Отправить">
-            </form>
-        </div>
-        <div class="contacts_icon">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
-    </div>
-
-    <div class="map">
+    <section class="map">
         <!--Карта-->
-    </div>
+    </section>
 
     <footer>
         <p>Copyright © 2021 Никита Капурин. Design by Web</p>
