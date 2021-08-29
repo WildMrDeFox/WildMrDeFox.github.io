@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ed933c8855.js" crossorigin="anonymous"></script>
+    <script src="js/preloader.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Веб-разработчик</title>
 </head>
+
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
     <header>
         <nav>
             <div class="container-nav">
@@ -18,41 +27,44 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li>Обо мне</li>
-                        <li>Услуги</li>
-                        <li>Кейсы</li>
-                        <li>Прайс</li>
-                        <li><a href="secret/index.html">Секреты</a></li>
-                        <li>Контакты</li>
+                        <li><a href="" class="nav-link">Обо мне</a></li>
+                        <li><a href="" class="nav-link">Услуги</a></li>
+                        <li><a href="" class="nav-link">Кейсы</a></li>
+                        <li><a href="" class="nav-link">Прайс</a></li>
+                        <li><a href="secret/index.html" class="nav-link">Секреты</a></li>
+                        <li><a href="" class="nav-link">Контакты</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="main">
+
+    <section class="main">
         <div class="title__container">
             <h1>Привет <br> Я Никита Капурин</h1>
             <h4>Фулл стук веб-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
         </div>
-    </div>
-    
+    </section>
+
     <section class="about">
         <div class="container">
 
-            <h2 class="title">Обо мне</h2>
+            <h2 class="title rotate-vert-center">Обо мне</h2>
             <hr class="line">
             <div class="about_img">
-                <img src="img/img-2.png" alt="">
+                <img src="img/img-2.png" alt="" class="rotate-center">
             </div>
 
             <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                <p class="rotate-tl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                    commodo nibh ante
                     facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                <p class="rotate-tr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                    commodo nibh ante
                     facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
             </div>
             <p class="btn-fix">
@@ -62,43 +74,43 @@
     </section>
 
     <section class="skills">
-        <h2 class="title">Что я умею</h2>
+        <h2 class="title rotate-diagonal-2">Что я умею</h2>
         <hr class="line">
 
         <div class="container">
             <div class="skills_container">
-            <div class="skills_item">
-                <img src="img/icon-2.png" alt="" class="skills_img">
-                <h5>Веб-дизайн</h5>
-                <p>Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </p>
-            </div>
+                <div class="skills_item">
+                    <img src="img/icon-2.png" alt="" class="skills_img">
+                    <h5>Веб-дизайн</h5>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </p>
+                </div>
 
-            <div class="skills_item">
-                <img src="img/icon-3.png" alt="" class="skills_img">
-                <h5>Разработка</h5>
-                <p>Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </p>
-            </div>
+                <div class="skills_item">
+                    <img src="img/icon-3.png" alt="" class="skills_img">
+                    <h5>Разработка</h5>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </p>
+                </div>
 
-            <div class="skills_item">
-                <img src="img/icon-4.png" alt="" class="skills_img">
-                <h5>CEO-Оптимизация</h5>
-                <p>Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </p>
-            </div>
+                <div class="skills_item">
+                    <img src="img/icon-4.png" alt="" class="skills_img">
+                    <h5>CEO-Оптимизация</h5>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </p>
+                </div>
 
-            <div class="skills_item">
-                <img src="img/icon-5.png" alt="" class="skills_img">
-                <h5>Маркетинг</h5>
-                <p>Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </p>
+                <div class="skills_item">
+                    <img src="img/icon-5.png" alt="" class="skills_img">
+                    <h5>Маркетинг</h5>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </p>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -107,63 +119,67 @@
         <hr class="line">
 
         <div class="container">
-        <p class="cases-description-head"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+            <p class="cases-description-head"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus
+                leo nec ornare diamcoccodo nibh ante facilisis.</p>
 
-        <img src="img/cases.png" alt="">
+            <img src="img/cases.png" alt="">
 
-        <div class="cases_descriptiption">
-            <div class="cases_des_left">
-                <h4 class="cases-title">Client:</h4>
-                <p class="cases-text">Какая-то компания</p>
-                <h4 class="cases-title">Website:</h4>
-                <p class="cases-text">http://www.somedomain.com</p>
+            <div class="cases_descriptiption">
+                <div class="cases_des_left">
+                    <h4 class="cases-title">Client:</h4>
+                    <p class="cases-text">Какая-то компания</p>
+                    <h4 class="cases-title">Website:</h4>
+                    <p class="cases-text">http://www.somedomain.com</p>
+                </div>
+                <div class="cases_des_right">
+                    <h4 class="cases-title">Название проекта</h4>
+                    <p class="cases-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod
+                        tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                </div>
+
             </div>
-            <div class="cases_des_right">
-                <h4 class="cases-title">Название проекта</h4>
-                <p class="cases-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="cases_btn">Visit Live Site</a>
+
+            <div class="price">
+                <h2 class="title margin">Расчет стоимости</h2>
+                <form action="#" class="price_form">
+                    <label class="price_name">Тип сайта</label>
+                    <select name="type" id="" class="price_select">
+                        <option>Выберите пункт...</option>
+                        <option value="1">Визитка</option>
+                        <option value="1">Интернет магазин</option>
+                        <option value="1">Блог</option>
+                    </select>
+
+                    <label class="price_name">Дизайн</label>
+                    <select name="disigne" id="" class="price_select">
+                        <option>Выберите пункт...</option>
+                        <option value="1">Простой</option>
+                        <option value="1">Сложный</option>
+                        <option value="1">Нереальный</option>
+                    </select>
+
+                    <label class="price_name">Адаптивность</label>
+                    <select name="adaptiv" id="" class="price_select">
+                        <option>Выберите пункт...</option>
+                        <option value="1">Статичный</option>
+                        <option value="1">Адаптивный</option>
+                    </select>
+                </form>
+                <div class="price_count">
+                    <p>Сроки</p>
+                    <p>0</p>
+                </div>
+                <div class="price_count">
+                    <p>Стоимость</p>
+                    <p>0</p>
+                </div>
             </div>
-            
         </div>
-        <a href="#" class="cases_btn">Visit Live Site</a>
-        
-        <div class="price">
-            <h2 class="title margin">Расчет стоимости</h2>
-            <form action="#" class="price_form">
-                <label class="price_name">Тип сайта</label>
-                <select name="type" id="" class="price_select">
-                    <option>Выберите пункт...</option>
-                    <option value="1">Визитка</option>
-                    <option value="1">Интернет магазин</option>
-                    <option value="1">Блог</option>
-                </select>
-
-                <label class="price_name">Дизайн</label>
-                <select name="disigne" id="" class="price_select">
-                    <option>Выберите пункт...</option>
-                    <option value="1">Простой</option>
-                    <option value="1">Сложный</option>
-                    <option value="1">Нереальный</option>
-                </select>
-
-                <label class="price_name">Адаптивность</label>
-                <select name="adaptiv" id="" class="price_select">
-                    <option>Выберите пункт...</option>
-                    <option value="1">Статичный</option>
-                    <option value="1">Адаптивный</option>
-                </select>
-            </form>
-            <div class="price_count">
-                <p>Сроки</p>
-                <p>0</p>
-            </div>
-            <div class="price_count">
-                <p>Стоимость</p>
-                <p>0</p>
-            </div>
-        </div>
-    </div>
     </section>
 
 
@@ -202,13 +218,14 @@
 
     <section class="comment">
         <div class="container">
-        <h2 class="title">Отзывы</h2>
-    
-        <hr class="line line_fix">
-    </div>
+            <h2 class="title">Отзывы</h2>
+
+            <hr class="line line_fix">
+        </div>
 
         <img src="img/comment-img.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante<br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo
+            nibh ante<br>
             facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
 
         <p><b>Михаил,</b>Ген директор ПАО"Газпром".</p>
@@ -219,7 +236,8 @@
         <h2 class="title title_white">Мои контакты</h2>
         <hr class="line">
         <div class="container-form">
-            <p class="contacts_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
+            <p class="contacts_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec
+                ornare diamcoccodo </p>
 
             <div class="contacts_item_main">
                 <div class="contacts_item">
@@ -249,12 +267,12 @@
                 </form>
             </div>
             <div class="contacts_icon_container">
-                <i class="fab fa-facebook-f contacts_icon"></i>
-                <i class="fab fa-twitter contacts_icon"></i>
-                <i class="fab fa-vk contacts_icon"></i>
-                <i class="fab fa-github contacts_icon"></i>
-                <i class="fab fa-instagram-square contacts_icon"></i>
-                <i class="fab fa-linkedin contacts_icon"></i>
+                <a href="#" class="social-link"><i class="fab fa-facebook-f contacts_icon"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter contacts_icon"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-vk contacts_icon"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github contacts_icon"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin contacts_icon"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram-square contacts_icon"></i></a>
             </div>
         </div>
     </section>
@@ -268,4 +286,5 @@
     </footer>
 
 </body>
+
 </html>
