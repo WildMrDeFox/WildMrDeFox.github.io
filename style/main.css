@@ -12,6 +12,10 @@
     
 }
 
+.navbar-nav .nav-item .nav-link:hover{
+    color: chocolate !important;
+}
+
 .navbar-nav>li {
     animation: topshift 0.4s ease forwards;
     opacity: 0;
