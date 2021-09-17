@@ -1,3 +1,7 @@
+body {
+    max-width: 100%;
+}
+
 .navbar {
     background-color: #2a3d50;
 }
@@ -8,17 +12,20 @@
 }
 
 .nav-link {
-    color: white !important;
-    
+    color: white;
 }
 
 .navbar-nav .nav-item .nav-link:hover{
-    color: chocolate !important;
+    color: chocolate;
 }
 
 .navbar-nav>li {
     animation: topshift 0.4s ease forwards;
     opacity: 0;
+}
+
+.element-img {
+    border-radius: 50%;
 }
 
 .main {
@@ -43,9 +50,6 @@
     color: #2c384a;
     text-align: center;
     margin-top: 20%;
-    opacity: 0;
-    animation: titlemove 2.4s ease forwards; 
-    animation-delay: 2s;
 }
 
 .main-info h1{
@@ -105,20 +109,21 @@
     margin-top: 40px;
 }
 
-.btn {
+.btn_castom {
     color: #6f707e;
     border: 2px solid #6f707e;
     border-radius: 3px;
     padding: 7px 10px 7px 23px;
     background: url("../img/icon-1.png") 5px no-repeat;
+    text-decoration: none;
 }
 
-.btn:hover {
+.btn_castom:hover {
     background-color: #6f707e;
     color: white;
 }
 
-.btn:active {
+.btn_castom:active {
     padding: 9px 12px 9px 25px;
 }
 
@@ -309,11 +314,12 @@
 }
 
 .comment {
-    margin: 100px 0 90px 0;
+    margin: 0px 0 90px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 100px;
 }
 
 .comment img {
@@ -324,6 +330,10 @@
     font-size: 12px;
     color: #243042;
     margin-top: 34px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
 }
 
 .contacts {

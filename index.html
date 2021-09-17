@@ -8,6 +8,8 @@
     <script src="js/preloader.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/magnific-popup.css">
     <link rel="stylesheet" href="style/main.css">
     <title>Никита Капурин</title>
 </head>
@@ -21,7 +23,7 @@
     </div>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Никита Капурин</a>
+            <a class="navbar-brand" href="#" data-aos="fade-up">Никита Капурин</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -30,22 +32,22 @@
             <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Обо мне</a>
+                        <a class="nav-link active" href="#about">Обо мне</a>
                     </li>
                     <li class="nav-item loc">
-                        <a class="nav-link loc" href="#">Услуги</a>
+                        <a class="nav-link loc" href="#skills">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Кейсы</a>
+                        <a class="nav-link" href="#cases">Кейсы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Прайс</a>
+                        <a class="nav-link" href="#statistic">Прайс</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Отзывы</a>
+                        <a class="nav-link" href="#comment">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                        <a class="nav-link" href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -55,10 +57,10 @@
 
 
 
-    <section class="main">
+    <section class="main" id="main">
         <div class="container">
             <div class="row">
-                <div class="main-info col-md-6">
+                <div class="main-info col-md-6" data-aos="fade-right" data-aos-delay="500">
                     <h1>Привет <br> Я Никита Капурин</h1>
                     <h4>Фулл стук веб-разработчик</h4>
                     <input type="button" value="Обо мне">
@@ -68,42 +70,45 @@
         </div>
     </section>
 
-    <section class="about container">
+    <section class="about container section" id="about">
         <div class="row">
             <div class="about-div offset-md-2 col-md-8 offset-md-2">
 
-                <h2 class="title rotate-vert-center">Обо мне</h2>
+                <h2 class="title" data-aos="fade-down">Обо мне</h2>
                 <hr class="line">
                 <div class="about_img">
-                    <img src="img/img-2.png" alt="" class="rotate-center">
+                    <img src="img/img-2-min.png" data-src="img/img-2.png" alt="" class=" element-img"
+                        data-aos="flip-left">
                 </div>
 
                 <div class="description">
-                    <p class="rotate-tl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo
+                    <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus
+                        leo
                         nec ornare diam. Sed
                         commodo nibh ante
                         facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
 
-                    <p class="rotate-tr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo
+                    <p data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus
+                        leo
                         nec ornare diam. Sed
                         commodo nibh ante
                         facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
                 </div>
                 <p class="btn-fix">
-                    <a href="#" class="btn">Скачать резюме</a>
+                    <a href="#" class="btn_castom" data-aos="fade-up-right">Скачать резюме</a>
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills section" id="skills">
         <div class="container">
-            <h2 class="title rotate-diagonal-2">Что я умею</h2>
+            <h2 class="title" data-aos="zoom-in">Что я умею</h2>
             <hr class="line">
 
             <div class="rw">
                 <div class="row">
-                    <div class="skills_item col-md-3">
+                    <div class="skills_item col-md-3" data-aos="fade-up">
                         <img src="img/icon-2.png" alt="" class="skills_img">
                         <h5>Веб-дизайн</h5>
                         <p>Lorem ipsum dolor sit amet placerat
@@ -111,7 +116,7 @@
                             pellentesque natoque etiam. </p>
                     </div>
 
-                    <div class="skills_item col-md-3">
+                    <div class="skills_item col-md-3" data-aos="fade-down">
                         <img src="img/icon-3.png" alt="" class="skills_img">
                         <h5>Разработка</h5>
                         <p>Lorem ipsum dolor sit amet placerat
@@ -119,7 +124,7 @@
                             pellentesque natoque etiam. </p>
                     </div>
 
-                    <div class="skills_item col-md-3">
+                    <div class="skills_item col-md-3" data-aos="fade-up">
                         <img src="img/icon-4.png" alt="" class="skills_img">
                         <h5>CEO-Оптимизация</h5>
                         <p>Lorem ipsum dolor sit amet placerat
@@ -127,7 +132,7 @@
                             pellentesque natoque etiam. </p>
                     </div>
 
-                    <div class="skills_item col-md-3">
+                    <div class="skills_item col-md-3" data-aos="fade-down">
                         <img src="img/icon-5.png" alt="" class="skills_img">
                         <h5>Маркетинг</h5>
                         <p>Lorem ipsum dolor sit amet placerat
@@ -139,18 +144,45 @@
         </div>
     </section>
 
-    <section class="cases">
-        <h2 class="title">Кейсы</h2>
-        <hr class="line">
-
+    <section class="cases section" id="cases">
         <div class="container">
+            <h2 class="title">Кейсы</h2>
+            <hr class="line">
+
+
             <p class="cases-description-head"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
                 Dapibus
                 leo nec ornare diamcoccodo nibh ante facilisis.</p>
 
-            <div class="cases-fix">
-                <img src="img/cases.png" alt="" class="img-fluid cases-img">
+
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/cases.png" class="d-block w-100 img-link" href="img/cases.png" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/cases.png" class="d-block w-100 img-link" href="img/cases.png" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/cases.png" class="d-block w-100 img-link" href="img/cases.png" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
             </div>
+
+
+
             <div class="row mb-4">
                 <div class="cases_des_left col-md-3">
                     <h4 class="cases-title">Client:</h4>
@@ -170,49 +202,70 @@
                         pariatur.</p>
                 </div>
             </div>
-            <a href="#" class="cases_btn">Visit Live Site</a>
+            <a href="#" class="cases_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Visit Live Site</a>
 
-            <div class="row">
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Упс...</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Извините, данный раздел находится в разработке.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть.</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="row" id="price">
                 <div class="price offset-md-1 col-md-10 offset-md-1">
                     <h2 class="title margin">Расчет стоимости</h2>
-                    <form action="#" class="price_form">
+                    <form action="#" class="price_form" id="myForm">
+
                         <label class="price_name">Тип сайта</label>
                         <select name="type" id="" class="price_select">
                             <option>Выберите пункт...</option>
-                            <option value="1">Визитка</option>
+                            <option value="0">Визитка</option>
                             <option value="1">Интернет магазин</option>
-                            <option value="1">Блог</option>
+                            <option value="2">Блог</option>
                         </select>
 
                         <label class="price_name">Дизайн</label>
-                        <select name="disigne" id="" class="price_select">
+                        <select name="disigne" id="leee" class="price_select">
                             <option>Выберите пункт...</option>
-                            <option value="1">Простой</option>
+                            <option value="0">Простой</option>
                             <option value="1">Сложный</option>
-                            <option value="1">Нереальный</option>
+                            <option value="2">Нереальный</option>
                         </select>
 
                         <label class="price_name">Адаптивность</label>
                         <select name="adaptiv" id="" class="price_select">
                             <option>Выберите пункт...</option>
-                            <option value="1">Статичный</option>
+                            <option value="0">Статичный</option>
                             <option value="1">Адаптивный</option>
+                            <option value="2">Мобильный</option>
                         </select>
                     </form>
                     <div class="price_count">
                         <p>Сроки</p>
-                        <p>0</p>
+                        <p class="result_day">0</p>
                     </div>
                     <div class="price_count">
                         <p>Стоимость</p>
-                        <p>0</p>
+                        <p class="result_price">0</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="statistic">
+    <section class="statistic section" id="statistic">
         <h2 class="title">Немного статистики</h2>
         <hr class="line">
 
@@ -226,7 +279,7 @@
 
                 <div class="statistic_item col-md-3">
                     <img src="img/statis-icon-2.png" alt="" class="statis_img">
-                    <h5 class="statis_title">4,600</h5>
+                    <h5 class="statis_title">4600</h5>
                     <p class="statis_text">Часов работы</p>
                 </div>
 
@@ -245,23 +298,66 @@
         </div>
     </section>
 
-    <section class="comment">
+    <section class="comment section" id="comment">
         <div class="container">
             <h2 class="title">Отзывы</h2>
 
             <hr class="line line_fix">
         </div>
 
-        <img src="img/comment-img.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo
-            nibh ante<br>
-            facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
 
-        <p><b>Михаил,</b>Ген директор ПАО"Газпром".</p>
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="comment-box">
+                        <img src="img/comment-img-min.png" data-src="img/comment-img.png" alt="" class="element-img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                            commodo
+                            nibh ante<br>
+                            facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+            
+                        <p><b>Михаил,</b>Ген директор ПАО"Газпром".</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="comment-box">
+                        <img src="img/comment-img-min.png" data-src="img/comment-img.png" alt="" class="element-img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                            commodo
+                            nibh ante<br>
+                            facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+            
+                        <p><b>Михаил,</b>Ген директор ПАО"Газпром".</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="comment-box">
+                        <img src="img/comment-img-min.png" data-src="img/comment-img.png" alt="" class="element-img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                            commodo
+                            nibh ante<br>
+                            facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+            
+                        <p><b>Михаил,</b>Ген директор ПАО"Газпром".</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
 
     </section>
 
-    <section class="contacts">
+    <section class="contacts section" id="contacts">
         <h2 class="title title_white">Мои контакты</h2>
         <hr class="line">
         <div class="container-form">
@@ -314,11 +410,12 @@
         <p>Copyright © 2021 Никита Капурин. Design by Web</p>
     </footer>
 
-
-
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
